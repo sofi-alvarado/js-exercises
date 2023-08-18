@@ -59,9 +59,28 @@ function clear() {
     return textReserve.textContent += string.split("").reverse().join("");
  }
 
-// End of Exercise 3
+// End of Exercise 4
 
+// 4. Implement a function to find the factorial of a number.
+let inputFactorial = document.getElementById("input-factorial");
+let btnFactorial = document.getElementById("btn-factorial");
+let textFactorial = document.getElementById("text-factorial");
 
+btnFactorial.addEventListener("click", function showFactorial() {
+   let pNumber = inputFactorial.value;
+   factorialNumber(pNumber); 
+})
+
+function factorialNumber(number) {
+    let factorial = number;
+   for (let i = 1; i < number; i++) {
+        factorial = factorial * i;
+   }
+   console.log(factorial)
+   return textFactorial.textContent += factorial;
+}
+
+// End of Exercise 4
 
 
 
