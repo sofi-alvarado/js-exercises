@@ -43,6 +43,26 @@ function clear() {
     inputNumber.value = " ";
 }
 
+// End of Exercise 2
+
+// 3. Write a function to reverse a string.
+ let inputReverse = document.getElementById("input-reverse");
+ let btnReverse = document.getElementById("btn-reverse");
+ let textReserve = document.getElementById("text-reverse");
+
+ btnReverse.addEventListener("click", function showReverse() {
+    let pString = inputReverse.value;
+    reverseString(pString); 
+ })
+
+ function reverseString(string) {
+    return textReserve.textContent += string.split("").reverse().join("");
+ }
+
+// End of Exercise 3
+
+
+
 
 
 
